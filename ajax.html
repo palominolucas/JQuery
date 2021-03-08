@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./js/ajax.js"></script>
+    <title>Ajax Requests!</title>
+    <style>
+        #datos {
+            border: 2px solid crimson;
+            width: 250px;
+            height: 250px;
+            overflow: scroll;
+            margin-top: 25px;
+        }
+        #input{
+            float:right;
+            border: 2px solid green;
+            width: 250px;
+            height: 250px;
+            overflow: scroll;
+            margin-top: 25px;
+            display: none;
+            margin-right: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aprendiendo peticiones Ajax desde JQuery!!</h1>
+    <form action="https://reqres.in/api/users" method="POST" id="form">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="web" placeholder="Web">
+        <input type="submit" value="Registrar">
+    </form>
+    <div id="input"></div>
+    <div id="datos"></div>
+</body>
+
+</html>
